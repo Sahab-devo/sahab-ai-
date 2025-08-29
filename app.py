@@ -7,7 +7,7 @@ import threading
 import time
 
 # Configure Gemini API Key
-GEMINI_API_KEY = "AIzaSyCskoz7K21zG7DAmGs0puXNyYJ-XqYwjOo"
+GEMINI_API_KEY = "put here gemini api key"
 genai.configure(api_key=GEMINI_API_KEY)
 
 app = Flask(__name__)
@@ -71,4 +71,5 @@ if __name__ == '__main__':
     os.makedirs('templates', exist_ok=True)
     
     # Run the Flask app
+
     app.run(debug=True, host='0.0.0.0', port=5000)
